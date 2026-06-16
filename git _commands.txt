@@ -1,0 +1,20 @@
+# Git Commands - Notes########################################################################################
+
+## Initialize & Check Repository##############################################
+git init          # Initialize a new git repo
+ls -a             # List all files (including hidden like .git)
+git status        # Check current status of working directory
+
+## Stage & Unstage Files########################################################
+git add testing.py           # Stage a file
+git rm --cached testing.py   # Unstage a file (remove from staging area)
+git add testing.py           # Re-stage the file
+
+## Commit######################################################################
+git commit -m "adding testing file"   # Commit staged changes with a message
+
+## Delete & Restore File####################################################
+rm testing.py             # Delete file from working directory
+git status                # Confirm file is deleted/missing
+git restore testing.py    # Restore deleted file from last commit
+git status                # Confirm file is restored
